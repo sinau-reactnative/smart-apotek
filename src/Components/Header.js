@@ -6,6 +6,7 @@ import {
   Dimensions,
   TouchableNativeFeedback,
   SafeAreaView,
+  StatusBar,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -14,6 +15,7 @@ const DEVICE = Dimensions.get('screen');
 const Header = ({name, onOpen}) => {
   return (
     <SafeAreaView style={styles.header}>
+      <StatusBar backgroundColor="transparent" />
       <View style={styles.col1}>
         <Text style={styles.headerText}>{name}</Text>
       </View>

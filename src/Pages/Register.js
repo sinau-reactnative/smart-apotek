@@ -31,6 +31,12 @@ const Register = (props) => {
           onChangeText={(e) => setId(e)}
         />
         <TextInput
+          keyboardType="numeric"
+          style={styles.input}
+          placeholder="WA NUMBER"
+          onChangeText={(e) => setId(e)}
+        />
+        <TextInput
           secureTextEntry={true}
           style={styles.input}
           placeholder="PASSWORD"
@@ -80,7 +86,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: DEVICE.width,
-    height: DEVICE.height / 2,
+    height: DEVICE.height / 1.3,
   },
   input: {
     backgroundColor: '#e5e5e5',
